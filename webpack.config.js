@@ -11,7 +11,8 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     devServer: {
-        outputPath: './build/'
+        outputPath: './build/',
+        host: '0.0.0.0'
     },
     module: {
         loaders: [
