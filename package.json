@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack-dev-server --config webpack.config.js --progress --colors",
+    "start": "webpack-dev-server --config webpack.config.js --progress --colors",
     "test": "jasmine || (echo 'SOME TESTS FAILED' && exit 0)",
     "clean": "rm -rf node_modules"
   },

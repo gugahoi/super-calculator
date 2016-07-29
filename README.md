@@ -10,11 +10,8 @@ To use this in docker make sure to first build the image:
 
 Then you may use it with the npm commands or simply `bash` into the container (default)
 
-`docker run -it -v /root/app/node_modules -v $(pwd):/root/app -p 8080:8080  super-calculator npm run build`
+- Dev Server: `docker run -it -v /root/app/node_modules -v $(pwd):/root/app -p 8080:8080  super-calculator npm start`
 
-`docker run -it -v /root/app/node_modules -v $(pwd):/root/app -p 8080:8080  super-calculator npm run test`
+- Tests: `docker run -it -v /root/app/node_modules -v $(pwd):/root/app -p 8080:8080  super-calculator npm run test`
 
-`docker run -it -v /root/app/node_modules -v $(pwd):/root/app -p 8080:8080  super-calculator /bin/bash`
-
-^^^^ default command ^^^^
-
+- Bash: `docker run -it -v /root/app/node_modules -v $(pwd):/root/app -p 8080:8080  super-calculator /bin/bash`
